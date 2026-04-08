@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>יפעת רון | קבוצת תמיכה למחלות שקופות</title>
+    <title>אבל לא רואים עליך | יפעת רון</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-purple: #a29bfe; /* סגול בהיר */
             --soft-lavender: #efedff;
-            --dark-text: #4834d4;
+            --dark-purple: #6c5ce7;
             --text-color: #2d3436;
             --white: #ffffff;
         }
@@ -31,8 +31,8 @@
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid var(--primary-purple);
@@ -46,8 +46,8 @@
             padding: 20px;
         }
 
-        h1 { color: var(--dark-text); margin-top: 0; font-size: 2.5rem; }
-        h2 { color: var(--dark-text); background: #fff; display: inline-block; padding: 5px 15px; border-radius: 5px; }
+        h1 { color: var(--dark-purple); margin-top: 0; font-size: 3rem; }
+        h2 { color: var(--dark-purple); border-right: 4px solid var(--primary-purple); padding-right: 15px; }
 
         .card {
             background: var(--white);
@@ -74,14 +74,8 @@
 
         .detail-card strong {
             display: block;
-            color: var(--dark-text);
+            color: var(--dark-purple);
             font-size: 1.1rem;
-        }
-
-        .faq-section {
-            background: #fff;
-            padding: 25px;
-            border-radius: 20px;
         }
 
         .faq-item {
@@ -90,27 +84,33 @@
             padding-bottom: 10px;
         }
 
-        .faq-item strong { color: var(--dark-text); display: block; margin-bottom: 5px; }
+        .faq-item strong { color: var(--dark-purple); display: block; margin-bottom: 5px; }
 
         .cta-button {
             display: inline-block;
             padding: 18px 45px;
-            background-color: #25d366; /* WhatsApp Green */
+            background-color: var(--dark-purple); /* סגול לפי בקשתך */
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 1.3rem;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            font-size: 1.4rem;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
             transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
 
-        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+        .cta-button:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+            background-color: #5b4bc4;
+        }
 
         .footer { text-align: center; padding: 40px; color: #7f8c8d; }
 
         @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
+            h1 { font-size: 2.2rem; }
             .card { padding: 20px; }
         }
     </style>
@@ -119,65 +119,66 @@
 
 <header>
     <div class="container">
-        <!-- החליפי את my-photo.jpg בשם הקובץ של התמונה שלך שתעלי לגיטהאב -->
-        <img src="profile.jpg" alt="יפעת רון" class="profile-img">
-        <h1>אני רואה אותך</h1>
-        <p style="font-size: 1.2rem; color: #666;">קבוצת תמיכה למתמודדים עם מחלות שקופות בהנחיית יפעת רון</p>
+        <!-- תיקון נתיב התמונה ורענון זיכרון דפדפן -->
+        <img src="./profile.jpg?v=2" alt="יפעת רון" class="profile-img" onerror="this.src='https://via.placeholder.com/200?text=Profile+Image'">
+        <h1>אבל לא רואים עליך</h1>
+        <p style="font-size: 1.3rem; color: #555;">קבוצת תמיכה בזום למתמודדים עם מחלות שקופות</p>
     </div>
 </header>
 
 <div class="container">
     <div class="card">
-        <h2>נעים מאוד, אני יפעת</h2>
-        <p>אני מנחת קבוצות בעלת <strong>תואר שני</strong>, מלווה קבוצות תמיכה כבר שלוש שנים, ומתמודדת בעצמי עם מחלה שקופה.</p>
-        <p>אני יודעת מה זה לקום בבוקר כשהגוף בוגד בך, ועדיין להמשיך לחייך לסביבה. אני כאן כדי להגיד לך: את לא צריכה להסביר את עצמך יותר. כאן מבינים אותך.</p>
+        <h2>קצת עלי - יפעת רון</h2>
+        <p>נעים מאוד, אני יפעת. אני מגיעה מעולמות ה-<strong>NLP Master</strong>, האימון והנחיית הקבוצות, עם <strong>תואר שני בניהול מערכות חינוך</strong>.</p>
+        <p>אני מנחה קבוצות תמיכה למתמודדי מחלות שקופות כבר שלוש שנים, אבל התואר הכי משמעותי שלי מגיע מהחיים עצמם: <strong>אני מתמודדת בעצמי עם מחלה שקופה</strong>.</p>
+        <p>אני מכירה מקרוב את הימים שבהם לקום מהמיטה מרגיש כמו טיפוס על האוורסט, ואת הצורך הבלתי פוסק להסביר ולחייך כשהגוף מרגיש אחרת לגמרי. אני לא רק מדברת "על" – אני חיה את זה יחד איתך, ומביאה לקבוצה שילוב של כלים מקצועיים והבנה עמוקה של הלב.</p>
     </div>
 
     <div class="card">
-        <h2>הכוח שבביחד</h2>
-        <p>הקבוצה היא המקום להניח את המסיכות, לקבל כלים מנטליים להתמודדות ולהפיג את הבדידות בתוך המחלה.</p>
+        <h2>הכוח של הקבוצה</h2>
+        <p>מחלה שקופה היא מאבק כפול: מול הגוף ומול סביבה שלא תמיד רואה. הקבוצה היא המקום להניח את המסיכות, להפסיק להתנצל, ולקבל כלים פרקטיים לניהול אנרגיה וחיים מלאים לצד המחלה.</p>
         
         <div class="details-grid">
             <div class="detail-card">
                 <strong>מתי נפגשים?</strong>
-                חמישי ב-19:00
+                כל יום חמישי ב-19:00
             </div>
             <div class="detail-card">
                 <strong>איפה?</strong>
-                בזום מהבית
+                בזום (נוח, נגיש, מהבית)
             </div>
             <div class="detail-card">
                 <strong>משך המפגש</strong>
-                שעה וחצי
+                שעה וחצי של תמיכה
             </div>
             <div class="detail-card">
                 <strong>עלות חודשית</strong>
-                100 ₪ (מחיר נגיש)
+                100 ₪ (בכוונה מחיר נגיש)
             </div>
         </div>
     </div>
 
-    <div class="faq-section">
+    <div class="card">
         <h2>שאלות ותשובות</h2>
         <div class="faq-item">
             <strong>האם הקבוצה מחליפה טיפול?</strong>
-            לא. זהו כלי תמיכה חברתי ומנטלי רב עוצמה שפועל בנוסף לטיפול הרפואי.
+            בפירוש לא. הקבוצה היא כלי תמיכה חברתי ומנטלי רב עוצמה שפועל בנוסף לטיפול הרפואי. זהו מרחב שמשלים את הטיפול ונותן כוח להתמודדות היומיומית.
         </div>
         <div class="faq-item">
-            <strong>איך נרשמים?</strong>
-            פשוט לוחצים על הכפתור למטה ושולחים לי הודעה בוואטסאפ.
+            <strong>למי הקבוצה מתאימה?</strong>
+            לכל מי שמתמודד עם מצב כרוני "שקוף" – פיברומיאלגיה, עייפות כרונית, כאב כרוני ועוד. המשותף לנו הוא חוויית החיים והצורך בקהילה שמבינה בלי מילים.
         </div>
     </div>
 
     <div style="text-align: center; margin-top: 40px;">
-        <a href="https://wa.me/972508884468?text=היי יפעת, אשמח לשמוע פרטים על קבוצת התמיכה" class="cta-button">
-            שלחי לי הודעה בוואטסאפ
+        <a href="https://wa.me/972508884468?text=היי יפעת, אני רוצה להירשם לקבוצת התמיכה אבל לא רואים עליך" class="cta-button">
+            כן, אני רוצה להירשם
         </a>
     </div>
 </div>
 
 <div class="footer">
-    <p>© 2026 יפעת רון | מנחת קבוצות תמיכה</p>
+    <p>© 2026 יפעת רון | מנחת קבוצות ו-NLP Master</p>
 </div>
 
 </body>
